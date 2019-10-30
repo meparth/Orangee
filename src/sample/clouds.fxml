@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CloudsController">
+   <children>
+      <AnchorPane fx:id="anchor" onMouseDragged="#mouseDraggedWindow" onMousePressed="#mousePressedWindow" prefHeight="382.0" prefWidth="603.0" style="-fx-background-color: #345;">
+         <children>
+            <Button fx:id="cancel_button" layoutX="550.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="20.0" prefWidth="4.0" style="-fx-background-color: #0000;">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/cancel_grey.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn" layoutX="178.0" layoutY="61.0" mnemonicParsing="false" onMouseEntered="#mouseEntered" onMouseExited="#mouseExited" onMousePressed="#mousePressed" style="-fx-background-color: #0000;" styleClass="hover">
+               <graphic>
+                  <ImageView fx:id="img" fitHeight="124.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/orangeebutton.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn2" layoutX="287.0" layoutY="61.0" mnemonicParsing="false" onMouseEntered="#mouseEntered" onMouseExited="#mouseExited" onMousePressed="#mousePressed" style="-fx-background-color: #0000;" styleClass="hover">
+               <graphic>
+                  <ImageView fx:id="img2" fitHeight="124.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/orangeebutton.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn3" layoutX="178.0" layoutY="171.0" mnemonicParsing="false" onMouseEntered="#mouseEntered" onMouseExited="#mouseExited" onMousePressed="#mousePressed" style="-fx-background-color: #0000;" styleClass="hover">
+               <graphic>
+                  <ImageView fx:id="img3" fitHeight="124.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/orangeebutton.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btn4" layoutX="287.0" layoutY="171.0" mnemonicParsing="false" onMouseEntered="#mouseEntered" onMouseExited="#mouseExited" onMousePressed="#mousePressed" style="-fx-background-color: #0000;" styleClass="hover">
+               <graphic>
+                  <ImageView fx:id="img4" fitHeight="124.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/orangeebutton.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label fx:id="nameWhereToGo" alignment="CENTER" layoutX="32.0" layoutY="266.0" prefHeight="96.0" prefWidth="545.0" text="Label" textAlignment="CENTER" textFill="#f2efef">
+               <font>
+                  <Font name="Homemade Apple" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btn1" layoutY="-121.0" mnemonicParsing="false" onMouseEntered="#mouseEntered" onMouseExited="#mouseExited" onMousePressed="#mousePressed" style="-fx-background-color: #0000;" styleClass="hover" visible="false">
+         <graphic>
+            <ImageView fx:id="img1" fitHeight="124.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/orangeebutton.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

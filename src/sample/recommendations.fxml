@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RecommendationsController">
+   <children>
+      <AnchorPane fx:id="anchor" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed" prefHeight="382.0" prefWidth="603.0" style="-fx-background-color: #345;">
+         <children>
+            <Button fx:id="btnImdb" layoutX="217.0" layoutY="118.0" mnemonicParsing="false" onAction="#toImdb" onMouseEntered="#enteredMouse" onMouseExited="#exitedMouse" prefHeight="65.0" prefWidth="153.0" style="-fx-background-color: #0000;">
+               <graphic>
+                  <ImageView fitHeight="86.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/imdb.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="btnQuora" layoutX="35.0" layoutY="104.0" mnemonicParsing="false" onAction="#toQuora" onMouseEntered="#enteredMouse" onMouseExited="#exitedMouse" prefHeight="65.0" prefWidth="153.0" style="-fx-background-color: #0000;">
+               <graphic>
+                  <ImageView fitHeight="112.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/quora.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="btnGoodreads" layoutX="415.0" layoutY="108.0" mnemonicParsing="false" onAction="#toGoodreads" onMouseEntered="#enteredMouse" onMouseExited="#exitedMouse" prefHeight="65.0" prefWidth="153.0" style="-fx-background-color: #0000;">
+               <graphic>
+                  <ImageView fitHeight="96.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/goodreadsicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label fx:id="label" alignment="CENTER" layoutX="22.0" layoutY="286.0" prefHeight="65.0" prefWidth="563.0" text="Label" textAlignment="CENTER" textFill="#dddddd">
+               <font>
+                  <Font name="Merriweather Light" size="27.0" />
+               </font>
+            </Label>
+            <WebView fx:id="browser" layoutY="52.0" prefHeight="316.0" prefWidth="603.0" visible="false">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </WebView>
+            <Button layoutX="518.0" layoutY="19.0" mnemonicParsing="false" onAction="#goHome" style="-fx-background-color: #0000;">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="cancel_button" layoutX="545.0" layoutY="18.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="20.0" prefWidth="4.0" style="-fx-background-color: #0000;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnBack" layoutX="13.0" layoutY="15.0" mnemonicParsing="false" onAction="#closeLid" onMouseEntered="#enteredMouse" onMouseExited="#exitedMouse" prefHeight="0.0" prefWidth="17.0" style="-fx-background-color: #0000;" visible="false">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

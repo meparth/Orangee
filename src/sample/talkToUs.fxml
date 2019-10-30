@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TalkToUsController">
+   <children>
+      <AnchorPane fx:id="anchor" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed" prefHeight="382.0" prefWidth="603.0" style="-fx-background-color: #345;">
+         <children>
+            <AnchorPane layoutX="56.6953125" layoutY="95.0" onMouseClicked="#goClient">
+               <children>
+                  <Label fx:id="label1" layoutX="0.3046875" layoutY="52.0" text="dont worry, we wont disclose anything, to anyone" textFill="#aaaaaa">
+                     <font>
+                        <Font name="Satisfy" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="3.3046875" text="talk to our volunteers..." textFill="#eeeeee">
+                     <font>
+                        <Font name="Satisfy" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="cancel_button" layoutX="533.0" layoutY="26.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="20.0" prefWidth="4.0" style="-fx-background-color: #0000;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <AnchorPane layoutX="57.0" layoutY="216.0" onMouseClicked="#goServer">
+               <children>
+                  <Label fx:id="label11" layoutX="0.3046875" layoutY="52.0" text="little bit of your time could help other a lot" textFill="#aaaaaa">
+                     <font>
+                        <Font name="Satisfy" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="3.3046875" text="talk and help others..." textFill="#eeeeee">
+                     <font>
+                        <Font name="Satisfy" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button layoutX="506.0" layoutY="27.0" mnemonicParsing="false" onAction="#goHome" style="-fx-background-color: #0000;">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

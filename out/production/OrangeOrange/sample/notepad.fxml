@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NotepadController">
+   <children>
+      <AnchorPane fx:id="anchor" onMouseDragged="#mouseDragged" onMousePressed="#mousePressed" prefHeight="382.0" prefWidth="603.0" style="-fx-background-color: #345;">
+         <children>
+            <Button fx:id="cancel_button" layoutX="533.0" layoutY="26.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="20.0" prefWidth="4.0" style="-fx-background-color: #0000;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="506.0" layoutY="27.0" mnemonicParsing="false" onAction="#goHome" style="-fx-background-color: #0000;">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextArea fx:id="inputArea" layoutX="46.0" layoutY="99.0" onKeyPressed="#entered" prefHeight="83.0" prefWidth="468.0" promptText="jot down your thoughts..." />
+            <DatePicker fx:id="datePicker" layoutX="253.0" layoutY="68.0" prefHeight="25.0" prefWidth="135.0" />
+            <Button layoutX="489.0" layoutY="107.0" mnemonicParsing="false" onAction="#addEntry" prefHeight="98.0" prefWidth="107.0" style="-fx-background-color: #0000;">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Checked.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ListView fx:id="list" layoutX="46.0" layoutY="191.0" prefHeight="160.0" prefWidth="520.0" />
+            <TextField fx:id="title" layoutX="46.0" layoutY="68.0" prefHeight="25.0" prefWidth="195.0" text="Title" />
+            <Button layoutX="489.0" layoutY="48.0" mnemonicParsing="false" onAction="#ansOut" prefHeight="98.0" prefWidth="107.0" style="-fx-background-color: #0000;">
+               <graphic>
+                  <ImageView fitHeight="77.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/submit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
